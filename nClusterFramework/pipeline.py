@@ -598,10 +598,10 @@ if __name__ == '__main__':
     # run_from_test_file('nClosest.txt')
     # run_from_test_file('2021-5-19-15-57-46-158.txt')
     # run_from_test_file('melSpecPlotting.txt')
-    run_from_test_file('2021-6-21-15-54-18-353_plotErrorRec.txt')
+    # run_from_test_file('2021-6-21-15-54-18-353_plotErrorRec.txt')
 
     # time.sleep(3)
 
-    # print(time.time())
-    # run()
-    # print('time: ', time.time()-start)
+    print(time.time())
+    run()
+    print('time: ', time.time()-start)
