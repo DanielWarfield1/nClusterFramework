@@ -1,52 +1,28 @@
-# MelClusterFramework
-Framework for streaming and clustering mel spectrogram data
+# nClusterFramework
+## Description
+A Framework for clustering multidimensional time series data based on windows of time. This is primarily designed for ingesting and clustering musical data.
 
-currently accepts the following commands for setting up:
+This framework, as of now, is only designed for clustering. There is no featurization or visualization, just JSON inputs and JSON outputs.
 
+---
+
+## General Functionality
+### nCluster
+nCluster is the parent object, which includes parameters, a list of Feature names, a dictionary of channels, a dictionary of flags, and a dictionary of info.
+
+### Channels
+Channels allow the user to organize organize different streams of temporal data. For instance, one channel could be used to store features derived from acoustical data from a drum, while another channel could be used to store the same features from a saxophone. Within one instance of the framework, the same features must be used for each channel, as that is necessary for clustering to occur
+
+In essence, a channel is a 2D structure, where 1D is time and the second dimension is features. Each element in a channel has a uid (unique identifier), allowing it to be associated with flags and info
+
+### Features
+Features are used to define the vector used to define the content of a particular timestamp. 
+
+### Flags
+
+__TODO: define how Flags exactly function__
+
+Internally used flags which denote specific things of importance. within a channel. Structurally the flags dictionary has the following content:
 ```
-set num_channels (int)
-set num_flags (int, should be >= 1)
-set input_size (int)
-set channel_length (int)
-set syncronous_function syn_func
-set asyncronous_function async_func
-set win_function win_func
-set window_size (int)
-set score_function score_func
-initialize
+{(channel, uid): {name: "flag name"}}
 ```
-
-and these commands for running
-
-```python
-add [(channel), [(mel spectrogram values, input_size)], [(flags, num_flags)]]
-run asynch
-```
-
-for add, the first flag should be weather or not this mel spectrogram coresponds to the start of a beat.
-
-run asynch plots a tsne plot
-
-
-
-here's an example of actually getting it running:
-
-```
-set num_channels 2
-set num_flags 2
-set input_size 5
-set channel_length 100
-set syncronous_function syn_func
-set asyncronous_function async_func
-set win_function win_func
-set window_size 5
-set score_function score_func
-initialize
-
-add [0, [0,1,2,3,4], [True, 1]]
-add [0, [0,1,2,3,4], [False, 1]]
-add [0, [0,0,2,3,4], [False, 1]]
-add [0, [0,0,2,3,4], [False, 1]]
-add [0, [0,0,2,3,4], [True, 1]]
-```
-

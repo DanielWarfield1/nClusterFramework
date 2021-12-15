@@ -17,6 +17,9 @@ output_verbose=True #toggle automated output, prompted output is not effected
 #analyzes data and assigns windows as necessary
 #assumes the first flag (flag0) is if a beat is started
 def win_func(pipeline, channels, feature_space):
+    """
+    Assigns windows
+    """
     
     #list of column names, for referencing
     c = pipeline.channel_columns
