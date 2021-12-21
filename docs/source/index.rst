@@ -10,6 +10,8 @@ nClusterFramework Docs
    :maxdepth: 2
    :caption: Contents:
 
+   modules
+
    license
    Help
    Intro
