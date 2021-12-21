@@ -14,6 +14,8 @@ nClusterFramework Docs
    Help
    Intro
 
+   modules
+
 Implementation Summary
 ======================
 
@@ -21,7 +23,7 @@ Implementation Summary
    :toctree: _autosummary
    :recursive:
 
-   nClusterFramework
+   nClusterFramework.nClusterFramework.pipeline
 
 
 Indices and tables

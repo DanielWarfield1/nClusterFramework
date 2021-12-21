@@ -1,4 +1,4 @@
-nClusterFramework.pipeline
+﻿nClusterFramework.pipeline
 ==========================
 
 .. automodule:: nClusterFramework.pipeline
@@ -8,6 +8,12 @@ nClusterFramework.pipeline
    
 
    
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      DOCTEST_square_root
    
    
 

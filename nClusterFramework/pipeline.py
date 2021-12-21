@@ -27,3 +27,17 @@ class Channel:
     data = None
     decay_type = "time" #time or length
     
+
+def DOCTEST_square_root(n):
+    """Calculate the square root of a number.
+
+    Args:
+        n: the number to get the square root of.
+    Returns:
+        the square root of n.
+    Raises:
+        TypeError: if n is not a number.
+        ValueError: if n is negative.
+
+    """
+    pass
