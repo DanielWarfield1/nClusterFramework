@@ -10,12 +10,18 @@ nClusterFramework Docs
    :maxdepth: 2
    :caption: Contents:
 
-   modules
-
    license
    Help
    Intro
 
+Implementation Summary
+======================
+
+.. autosummary::
+   :toctree: _autosummary
+   :recursive:
+
+   nClusterFramework
 
 
 Indices and tables
