@@ -2,6 +2,8 @@
 
 Read the docs here for more info: https://nclusterframework.readthedocs.io/en/latest/
 
+note: this was abandoned in favore of https://github.com/DanielWarfield1/MelClusterFramework
+
 ## Description
 A Framework for clustering multidimensional time series data based on windows of time. This is primarily designed for ingesting and clustering musical data.
 
